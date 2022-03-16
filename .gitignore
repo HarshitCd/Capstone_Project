@@ -1,0 +1,4 @@
+start_up.sh
+*/venv
+ui_part/webapp/run_app.sh
+ui_part/webapp/__pycache__/

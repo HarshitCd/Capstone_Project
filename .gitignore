@@ -1,0 +1,6 @@
+venv
+
+webapp/run_app.sh
+webapp/__pycache__/
+webapp/requirements.txt
+webapp/static/images/*.*

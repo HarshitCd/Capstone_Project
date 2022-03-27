@@ -3,4 +3,8 @@ venv
 webapp/run_app.sh
 webapp/__pycache__/
 webapp/requirements.txt
+<<<<<<< HEAD
 webapp/static/images/*.*
+=======
+static/images/*
+>>>>>>> d2221c995947b6832508f07b2622497fb9e75398

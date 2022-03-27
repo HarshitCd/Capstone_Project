@@ -1,5 +1,7 @@
 # Capstone_Project 
 
+## Add images directory in static folder
+
 # <br> To setup a virtual evnironment:
 
 ## Mac or Linux:

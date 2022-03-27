@@ -1,10 +1,6 @@
-start_up.sh
-*/venv
+venv
 
-ui_part/webapp/run_app.sh
-ui_part/webapp/__pycache__/
-ui_part/webapp/requirements.txt
-
-ml_part/api/run_api.sh
-ml_part/api/__pycache__/
-ml_part/api/requirements.txt
+webapp/run_app.sh
+webapp/__pycache__/
+webapp/requirements.txt
+static/images/*

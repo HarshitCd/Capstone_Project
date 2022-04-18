@@ -5,5 +5,5 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Length
 
 class InputForm(FlaskForm):
-    picture = FileField('Input Image', validators=[DataRequired(), FileAllowed(['jpg', 'png'])])
-    submit = SubmitField('Submit')
+    picture = FileField('Upload Image', validators=[DataRequired(), FileAllowed(['jpg', 'png'])])
+    submit = SubmitField('Restore Image')

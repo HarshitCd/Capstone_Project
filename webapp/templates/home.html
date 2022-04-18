@@ -1,19 +1,41 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="content-section">
+        <div class="tagline">
+            <p>Retell your story...<br/>restore images</p>
+        </div> 
+
         <form method="POST" action="" enctype="multipart/form-data">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Upload Image</legend>
                 {% if image_file %}
                     <img src="{{ image_file }}">
-                {% endif %}
+                {% endif %}                
                 
-                <div class="form-group">
+                    <!-- Upload Image -->
+                    <div class="frame">
+                        <div class="center">
+                            <div class="title">
+                                <h1 class="upload-h1">Upload Image</h1>
+                            </div>
+
+                            <div class="dropzone">
+                                <span class="glyphicon glyphicon-cloud-upload"></span>
+                                <!-- <input type="file" class="upload-input" /> -->
+                            </div>
+
+                            <div class="form-group">
+                                {{ form.picture(class="form-control-file") }}
+                                <!-- <button type="button" class="upload-btn" name="uploadbutton">Upload file</button> -->
+                            </div>
+
+                        </div>
+                    </div>
+                <!-- <div class="form-group">
                     {{ form.picture.label() }}
                     {{ form.picture(class="form-control-file") }}
-                </div>
-                <div class="form-group">
+                </div> -->
+                <div class="form-group restore-image-btn">
                     {{ form.submit(class="btn btn-outline-info") }}
                 </div>
             </fieldset>

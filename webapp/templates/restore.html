@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="content-section">
+    <div class="container">
+        <div class="card-group">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="card col-md-2">
+                    <img src="../static/img/img.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Original Image</h3>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1">
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </div>
+                <div class="card col-md-3">
+                    <img src="../static/img/img.png" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title">Restored Image</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <button class="btn col-md-3 download-btn">Download Image</button>
+            <button class="btn col-md-3 download-btn redo">Redo</button>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

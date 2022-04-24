@@ -34,7 +34,8 @@ def input_pic():
         image_file = url_for('static', filename = 'images/' + image_fn)
         print(image_file)
         
-        return render_template('home.html', title='Username', form=form, image_file=image_file)
+        return render_template('restore.html')
+        # return render_template('home.html', title='Username', form=form, image_file=image_file)
     return render_template('home.html', form=form)
 
 

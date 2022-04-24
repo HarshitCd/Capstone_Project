@@ -36,8 +36,13 @@ img {
 }
 
 .tagline {
+
+
+font-family: 'Caramel', cursive;
+font-style: normal;
+font-weight: 400;
 	color: #FDF7FD;
-	font-size: xx-large;
+	font-size: 400%;
 }
 
 .heading {

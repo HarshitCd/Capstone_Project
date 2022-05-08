@@ -8,10 +8,7 @@
         <form method="POST" action="" enctype="multipart/form-data">
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
-                {% if image_file %}
-                    <img src="{{ image_file }}">
-                {% endif %}                
-                
+              
                     <!-- Upload Image -->
                     <div class="frame">
                         <div class="center">
@@ -20,8 +17,11 @@
                             </div>
 
                             <div class="dropzone">
-                                <span class="glyphicon glyphicon-cloud-upload"></span>
-                                <input type="file" class="upload-input" />
+                                {% if image_file %}
+                                <img src="{{__image_file__}}">
+                            {% else %}
+                            <span class="glyphicon glyphicon-cloud-upload"></span>
+                            {% endif %}
                             </div>
 
                             <div class="form-group">

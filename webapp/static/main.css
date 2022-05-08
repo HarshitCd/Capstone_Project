@@ -4,7 +4,10 @@ h1 {
 
 body {
 	background-color: #121212;
+	background: url(bg.png);
 }
+
+
 
 img {
     width: 40vh;
@@ -36,8 +39,6 @@ img {
 }
 
 .tagline {
-
-
 font-family: 'Caramel', cursive;
 font-style: normal;
 font-weight: 400;
@@ -48,6 +49,7 @@ font-weight: 400;
 .heading {
     color: #FFFEFF;
     font-weight: bold;
+	font-size: 400%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -125,3 +127,5 @@ font-weight: 400;
 	background: rgb(158, 158, 189);
     color: #fff;
 }
+
+

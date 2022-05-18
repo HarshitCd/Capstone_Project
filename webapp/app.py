@@ -15,6 +15,16 @@ def rm_files(folder):
 def download(filename):
     return send_file(filename,as_attachment=True)
 
+@app.route('/aboutUs', methods=['GET'])
+def aboutUs():
+    return render_template('aboutUs.html')
+
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('index.html')
+
+
+
 def save_image(image_data):
      random_hex = secrets.token_hex(8)
      _, f_ext = os.path.splitext(image_data.filename)
@@ -24,10 +34,11 @@ def save_image(image_data):
      return picture_fn
 
 def restorer(image_file):
+    # Command
     restored_image=""
     return restored_image
 
-@app.route("/", methods=['POST', 'GET'])
+
 @app.route("/home", methods=['POST', 'GET'])
 def input_pic():
     
@@ -48,6 +59,7 @@ def input_pic():
 
         return render_template('restore.html',orignal_image=image_file,restored_image=image_file)
     return render_template('home.html', form=form)
+
 
 
 if __name__ == '__main__':

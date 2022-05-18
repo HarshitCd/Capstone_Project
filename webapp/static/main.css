@@ -1,14 +1,10 @@
-h1 {
-    color: aquamarine;
+body{
+	font-family: 'Calibri';
 }
 
-body {
-	background-color: #121212;
-	background: url(bg.png);
+a:link{
+	text-decoration: none;
 }
-
-
-
 img {
     width: 40vh;
     height: auto;
@@ -20,8 +16,37 @@ img {
 }
 
 .btn {
-	background-color: #C4C4C4;
+	background-color: #542087;
     font-weight: bolder;
+	color: white;
+	border: #542087;
+	font-size: 2vw;
+
+}
+
+.cards{
+	width: fit-content;
+	text-align: center;
+	align-content: center;
+	background-color: #542087;
+	font-weight: bold;
+	font-size: 1.5vw;
+}
+
+.imgAboutUs{
+	display: flex;
+justify-content: center;
+}
+
+.bg-dark{
+	--bs-bg-opacity: 1;
+    background-color: #542087;
+}
+
+hr{
+	background-color:  #542087;
+border: 0.1vw solid  #542087
+
 }
 
 .download-btn {
@@ -34,17 +59,20 @@ img {
 	margin-left: 180px;
 }
 
-.nav {
-    background-color: #3E3D3D;
+.nav{
+    background-color: #542087;
+	font-size:2vw;
 }
 
 .tagline {
-font-family: 'Caramel', cursive;
-font-style: normal;
-font-weight: 400;
-	color: #FDF7FD;
-	font-size: 400%;
+font-family: 'Calibri';
+font-weight: bold;
+font-size: 3vw;
 }
+
+.content {
+	font-family: 'Calibri';
+	font-size:1.5vw;}
 
 .heading {
     color: #FFFEFF;

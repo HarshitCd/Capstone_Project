@@ -54,10 +54,10 @@ def input_pic():
         image_file = url_for('static', filename = 'images/' + image_fn)
         print(image_file)
 
-        restored_image=restorer(image_file)
-        #return render_template('restore.html',orignal_image=image_file,restored_image=restored_image)
+        restored_image=url_for('static', filename = 'imgs/' + image_fn)
+        return render_template('restore.html',orignal_image=image_file,restored_image=restored_image)
 
-        return render_template('restore.html',orignal_image=image_file,restored_image=image_file)
+        #return render_template('restore.html',orignal_image=image_file,restored_image=image_file)
     return render_template('home.html', form=form)
 
 

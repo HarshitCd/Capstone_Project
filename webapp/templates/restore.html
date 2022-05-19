@@ -7,27 +7,31 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="card col-md-2">
-                    <img src="../static/img/img.png" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Original Image</h3>
                     </div>
+                    <img src="{{ orignal_image }}" class="card-img-top">
+                    
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-1">
                     <span class="glyphicon glyphicon-arrow-right"></span>
                 </div>
                 <div class="card col-md-3">
-                    <img src="../static/img/img.png" class="card-img-top">
                     <div class="card-body">
                         <h3 class="card-title">Restored Image</h3>
                     </div>
+                    <img src="{{ restored_image }}" class="card-img-top">
+                   
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-2"></div>
-            <button class="btn col-md-3 download-btn">Download Image</button>
-            <button class="btn col-md-3 download-btn redo">Redo</button>
+            
+            <button class="btn col-md-2 download-btn"><a href="{{ url_for('download', filename=restored_image)}}">Download Image</a></button>
+            <div class="col-md-2"></div>
+            <button class="btn col-md-2 download-btn"><a href="{{ url_for('input_pic') }}">Redo</a></button>
         </div>
     </div>
 </div>

@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section " align-items="centre">
+    
+        <div class="row justify-content-center mt-4 mb-5 About Us Block" align-items="center">
+            <div class="col-lg-6 col-md-9 col-sm-10 col-xs-11" align-items=center>
+                <p class="tagline" align=center>Retell your story...<br/>restore your image</p>
+                <p class="content" align="center">Now there's no need to discard old and damaged images, you can restore them with our image restoring tool for free. The stories you tell will be more fun with your restored images! </p>
+            </div> 
+            <div class="row justify-content-center">
+                <a align= center href="{{ url_for('aboutUs')}}"><button class="btn">Find out more about Us</button></a>
+            </div>
+
+           
+
+        </div>
+
+
+        <hr>
+
+        <div class="row justify-content-center mt-4 mb-5 About Us Block" align-items="center">
+            <div class="col-6">
+                <p class="tagline" align="center">Try it out right now!</p>
+                <div class="m-3 imgAboutUs">
+                    <img src="../static/example.png" class="img-fluid" align=center>
+                </div>
+            </div> 
+            <div class="row justify-content-center">
+                <a align=center href="{{ url_for('input_pic')}}"><button class="btn">Upload Image</button></a>
+            </div>
+            
+        </div>
+
+
+    </div>
+    
+{% endblock content %}

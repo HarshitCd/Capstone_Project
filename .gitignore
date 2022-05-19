@@ -2,5 +2,4 @@ venv
 
 webapp/run_app.sh
 webapp/__pycache__/
-webapp/requirements.txt
 static/images/*
